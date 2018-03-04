@@ -146,7 +146,7 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
 		UpdateRadar(meas_package);
 	}
 	else if (meas_package.sensor_type_ == MeasurementPackage::LASER) {
-		//UpdateLidar(meas_package);
+		UpdateLidar(meas_package);
 	}
 }
 
@@ -213,8 +213,8 @@ void UKF::Prediction(double delta_t) {
 		/*cout << "Iter: " << i << endl;
 		cout << "Delta t: " << delta_t << endl;
 		cout << "Yaw: " << yaw << endl;*/
-		while (yaw > M_PI) yaw -= 2.*M_PI;
-		while (yaw <-M_PI) yaw += 2.*M_PI;
+		//while (yaw > M_PI) yaw -= 2.*M_PI;
+		//while (yaw <-M_PI) yaw += 2.*M_PI;
 		//cout << "Normalizing all done 1.." << endl;
 
 		//predicted state values
@@ -236,8 +236,8 @@ void UKF::Prediction(double delta_t) {
 
 		//normalize angles
 		//cout << "Yaw: " << yaw_p << endl;
-		while (yaw_p > M_PI) yaw_p -= 2.*M_PI;
-		while (yaw_p <-M_PI) yaw_p += 2.*M_PI;
+		//while (yaw_p > M_PI) yaw_p -= 2.*M_PI;
+		//while (yaw_p <-M_PI) yaw_p += 2.*M_PI;
 		//cout << "Normalizing all done 2.." << endl;
 
 		//add noise
@@ -250,8 +250,8 @@ void UKF::Prediction(double delta_t) {
 
 		//normalize angles
 		//cout << "Yaw: " << yaw_p << endl;
-		while (yaw_p > M_PI) yaw_p -= 2.*M_PI;
-		while (yaw_p <-M_PI) yaw_p += 2.*M_PI;
+		//while (yaw_p > M_PI) yaw_p -= 2.*M_PI;
+		//while (yaw_p <-M_PI) yaw_p += 2.*M_PI;
 		//cout << "Normalizing all done 3.." << endl;
 
 		//write predicted sigma point into right column
@@ -502,5 +502,5 @@ void UKF::UpdateRadar(MeasurementPackage meas_package) {
   //update state mean and covariance matrix
   x_ = x_ + K*z_diff;
   P_ = P_ - K*S*K.transpose();
-  cout << radar_nis_ << endl;
+  //cout << radar_nis_ << endl;
 }
