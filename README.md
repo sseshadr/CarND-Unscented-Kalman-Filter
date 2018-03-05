@@ -57,7 +57,7 @@ This had a huge effect on the result of the tracking. The trick was to NOT norma
 We can write a simple check to see if denominators don't result in 0. This is built into the sigma point prediction to switch calculations based on when the yaw derivative is 0.
 
 ##### Test Your Implementation
-Testing this implementation on both datasets 1 and 2, we are able to pass the rubric check. The px, py, vx, and vy RMSE is less than or equal to the values  [.09, .10, .40, .30].
+Testing this implementation on dataset 1, we are able to pass the rubric check. The px, py, vx, and vy RMSE is less than or equal to the values  [.09, .10, .40, .30]. Parameters still need to be tuned to pass for dataset 2. Since this is not a requirement project, it is left for future improvement.
 
 Other links that helped:
 https://discussions.udacity.com/t/simulator-freezes-stuck-in-while-loop-for-angle-normalization/349245/4
