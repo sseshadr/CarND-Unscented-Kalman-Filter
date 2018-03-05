@@ -7,19 +7,19 @@ Use Unscented Kalman filter principles with the CTRV model to fuse LiDAR and RAD
 
 [//]: # (Image References)
 
-[image1]: ./readme_images/ctrv_prediction.PNG "Prediction CTRV model test"
+[image1]: ./readme_images/ctrv_prediction.png "Prediction CTRV model test"
 
-[image2]: ./readme_images/update_lidar.PNG "LIDAR only Tracking"
+[image2]: ./readme_images/update_lidar.png "LIDAR only Tracking"
 
-[image3]: ./readme_images/lidarnis.PNG "LIDAR NIS"
+[image3]: ./readme_images/lidarnis.png "LIDAR NIS"
 
-[image4]: ./readme_images/radarOnly.PNG "RADAR Only Tracking"
+[image4]: ./readme_images/radarOnly.png "RADAR Only Tracking"
 
-[image5]: ./readme_images/radarnis.PNG "RADAR NIS"
+[image5]: ./readme_images/radarnis.png "RADAR NIS"
 
-[image6]: ./readme_images/update_both.PNG "Final Tracking with both LIDAR and RADAR"
+[image6]: ./readme_images/update_both.png "Final Tracking with both LIDAR and RADAR"
 
-[image7]: ./readme_images/allnis.PNG "Final NIS"
+[image7]: ./readme_images/allnis.png "Final NIS"
 
 ---
 
